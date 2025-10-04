@@ -5,3 +5,4 @@ build/
 *.a
 /.idea
 /.vscode
+.guppydev-prepare-sub
