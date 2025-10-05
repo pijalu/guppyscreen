@@ -68,7 +68,7 @@ SHAPER_CONFIG=$KLIPPY_EXTRA_DIR/calibrate_shaper_config.py
 
 K1_CONFIG_FILE=`curl localhost:7125/printer/info 2> /dev/null | jq -r .result.config_file`
 if [ -z "$K1_CONFIG_FILE" -o x"$K1_CONFIG_FILE" == x"null" ]; then    
-    K1_CONFIG_DIR=/usr/data/printer_data/config
+    K1_CONFIG_DIR=/home/mks/printer_data/config
     printf "${green} Falling back to config dir: $K1_CONFIG_DIR ${white}\n"
 else
     K1_CONFIG_DIR=$(dirname "$K1_CONFIG_FILE")

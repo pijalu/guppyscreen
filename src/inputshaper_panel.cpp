@@ -11,7 +11,7 @@ LV_IMG_DECLARE(sd_img);
 LV_IMG_DECLARE(emergency);
 LV_IMG_DECLARE(back);
 
-LV_FONT_DECLARE(dejavusans_mono_14);
+LV_FONT_DECLARE(harmonyos_sans_10);
 
 #define X_DATA "/tmp/resonances_x_x.csv"
 #define X_PNG "resonances_x.png"
@@ -106,11 +106,11 @@ InputShaperPanel::InputShaperPanel(KWebSocketClient &c, std::mutex &l)
   // graphs
   lv_img_set_zoom(xgraph, 95);
   lv_obj_center(xgraph);
-  // lv_img_set_src(xgraph, "A:/usr/data/printer_data/thumbnails/resonances_x.png");
+  // lv_img_set_src(xgraph, "A:/home/mks/printer_data/thumbnails/resonances_x.png");
 
   lv_img_set_zoom(ygraph, 95);
   lv_obj_center(ygraph);
-  // lv_img_set_src(ygraph, "A:/usr/data/printer_data/thumbnails/resonances_y.png");
+  // lv_img_set_src(ygraph, "A:/home/mks/printer_data/thumbnails/resonances_y.png");
 
   lv_obj_set_size(ygraph_cont, LV_PCT(40), LV_PCT(45));
   lv_obj_clear_flag(ygraph_cont, LV_OBJ_FLAG_SCROLLABLE);
@@ -120,11 +120,11 @@ InputShaperPanel::InputShaperPanel(KWebSocketClient &c, std::mutex &l)
   // text output
   lv_obj_set_size(xoutput, LV_PCT(38), LV_PCT(45));
   lv_label_set_text(xoutput, "");
-  lv_obj_set_style_text_font(xoutput, &dejavusans_mono_14, LV_STATE_DEFAULT);
+  lv_obj_set_style_text_font(xoutput, &harmonyos_sans_10, LV_STATE_DEFAULT);
 
   lv_obj_set_size(youtput, LV_PCT(38), LV_PCT(45));
   lv_label_set_text(youtput, "");
-  lv_obj_set_style_text_font(youtput, &dejavusans_mono_14, LV_STATE_DEFAULT);
+  lv_obj_set_style_text_font(youtput, &harmonyos_sans_10, LV_STATE_DEFAULT);
 
   // spinners
   lv_obj_add_flag(xspinner, LV_OBJ_FLAG_HIDDEN);

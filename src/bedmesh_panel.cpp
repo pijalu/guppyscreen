@@ -50,9 +50,9 @@ BedMeshPanel::BedMeshPanel(KWebSocketClient &c, std::mutex &l)
 
   auto screen_width = lv_disp_get_physical_hor_res(NULL);
   if (screen_width < 800) {
-    lv_obj_set_style_text_font(mesh_table, &lv_font_montserrat_8, LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(mesh_table, &harmonyos_sans_8, LV_STATE_DEFAULT);
   } else {
-    lv_obj_set_style_text_font(mesh_table, &lv_font_montserrat_10, LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(mesh_table, &harmonyos_sans_10, LV_STATE_DEFAULT);
   }
 
   // mesh table
